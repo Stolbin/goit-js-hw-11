@@ -1,29 +1,30 @@
 .form_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .search-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .btn {
-    width: 100px;
-    height: 40px;
+  width: 100px;
+  height: 40px;
 }
 
 input {
-    height: 40px;
-    border-radius: 5px;
-    border-color: 1px solid rgb(119, 112, 112);
+  height: 40px;
+  border-radius: 5px;
+  border-color: 1px solid rgb(119, 112, 112);
 }
 
 body {
-    padding: 20px;
+  padding: 20px;
 }
