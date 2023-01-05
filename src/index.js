@@ -80,7 +80,7 @@ function scroll() {
     .firstElementChild.getBoundingClientRect();
 
   window.scrollBy({
-    top: cardHeight * 2.8,
+    top: cardHeight * 3,
     behavior: "smooth",
   });
 }

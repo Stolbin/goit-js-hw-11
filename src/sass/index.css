@@ -29,6 +29,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: calc(100vw - 80px);
+  margin-left: auto;
+  margin-right: auto;
   gap: 20px;
 }
 
@@ -45,14 +48,16 @@
 }
 
 .info-titel {
+  font-family: Roboto Slab, sans-serif;
   font-size: 20px;
   font-weight: 500;
   text-shadow: rgb(205, 201, 190) 1px 0 1px;
 }
 
 .info-value {
+  font-family: Roboto Mono, sans-serif;
   font-size: 16px;
-  font-weight: 250;
+  font-weight: 500;
   color: rgb(34, 45, 57);
 }
 
@@ -66,6 +71,8 @@
 }
 
 .btn {
+  font-family: Rowdies, sans-serif;
+  font-weight: 300;
   width: 100px;
   height: 40px;
   border-radius: 5px;
@@ -73,6 +80,8 @@
 }
 
 input {
+  font-family: Roboto Slab, sans-serif;
+  font-weight: 400;
   padding-left: 5px;
   height: 40px;
   border-radius: 5px;
@@ -86,7 +95,6 @@ body {
 
 .photo-card {
   padding: 10px;
-  border: 1px solid rgb(119, 112, 112);
   background-color: rgba(241, 236, 225, 0.92);
   border-radius: 5px;
 }
@@ -107,6 +115,10 @@ body {
 
 .load-more.is-hidden {
   display: none;
+}
+
+.spinner {
+  color: aliceblue;
 }
 
 .load-more > .spinner.is-hidden {
