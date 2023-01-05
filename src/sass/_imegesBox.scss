@@ -39,7 +39,6 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  cursor: pointer;
   margin-bottom: 30px;
 }
 
@@ -89,9 +88,10 @@ body {
   display: none;
 }
 
-.spinner {
+.spinner-border-sm {
   color: aliceblue;
 }
+
 .load-more > .spinner.is-hidden {
   display: none;
 }
