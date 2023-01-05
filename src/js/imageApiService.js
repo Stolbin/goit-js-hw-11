@@ -1,5 +1,5 @@
 const axios = require("axios").default;
-const key = "189ZyJdpS4wFJim3wQVBxdLs9Um5G3K4J3";
+const key = "32628056-fce49f0093e538c5a69cf5c6c";
 const BASE_URL = "https://pixabay.com/api/";
 const params = `image_type=photo&orientation=horizontal&per_page=40`;
 
