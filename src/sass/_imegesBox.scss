@@ -1,24 +1,41 @@
-.form_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 20px;
 }
+
+.info {
+  padding: 15px 0px 5px 5px;
+}
+
+.info-item {
+  margin-bottom: 15px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0px;
+}
+
+.info-titel {
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: rgb(205, 201, 190) 1px 0 1px;
+}
+
+.info-value {
+  font-size: 16px;
+  font-weight: 250;
+  color: rgb(34, 45, 57);
+}
+
 .search-form {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -29,13 +46,10 @@
 }
 
 input {
+  padding-left: 5px;
   height: 40px;
   border-radius: 5px;
   border: 1px solid rgb(119, 112, 112);
-  &:hover,
-  :focus {
-    border: 1px solid rgb(119, 112, 112);
-  }
 }
 
 body {
@@ -46,6 +60,27 @@ body {
 .photo-card {
   padding: 10px;
   border: 1px solid rgb(119, 112, 112);
-  background-color: rgb(233, 239, 205);
+  background-color: rgba(241, 236, 225, 0.92);
   border-radius: 5px;
+}
+
+.photo-card img {
+  border-radius: 10px;
+  box-shadow: 0 1px 4px #777;
+  object-fit: cover;
+}
+
+.load-more {
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.load-more.is-hidden {
+  display: none;
+}
+
+.load-more > .spinner.is-hidden {
+  display: none;
 }

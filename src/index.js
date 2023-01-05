@@ -14,7 +14,7 @@ const loadMoreButton = new LoadMoreButton({
 });
 const lightBox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
-  captionDelay: 250,
+  captionDelay: 300,
 });
 
 refs.searchForm.addEventListener("submit", onSearch);
@@ -31,7 +31,7 @@ async function onSearch(e) {
   }
 
   imageApiService.resetPage();
-//   clear();
+  clear();
 
   try {
     const { hits, totalHits } = await imageApiService.getImages();

@@ -18,10 +18,10 @@ function createImageElement(hits) {
         />
         </a>
             <div class='info'>
-            <p class='info-item'>Likes: ${hits.likes}</p>
-            <p class='info-item'>Views: ${hits.views}</p>
-            <p class='info-item'>Comments: ${hits.comments}</p>
-            <p class='info-item'>Downloads: ${hits.downloads}</p>
+            <p class='info-item'><span class='info-titel'>Likes: </span><span class='info-value'>${hits.likes}</span></p>
+            <p class='info-item'><span class='info-titel'>Views: </span><span class='info-value'>${hits.views}</span></p>
+            <p class='info-item'><span class='info-titel'>Comments: </span><span class='info-value'>${hits.comments}</span></p>
+            <p class='info-item'><span class='info-titel'>Downloads: </span><span class='info-value'>${hits.downloads}</span></p>
             </div>
         </div>`
       )
