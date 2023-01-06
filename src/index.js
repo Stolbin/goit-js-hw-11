@@ -2,7 +2,7 @@ import ImageApiService from "./js/imageApiService";
 import LoadMoreButton from "./js/loadMoreBtn";
 import { getRefs } from "./js/refs";
 import { renderMarkup, clear } from "./js/renderMarkup";
-import { Notify } from "notiflix/build/notiflix-notify-aio";
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SimpleLightbox from 'simplelightbox';
 import "simplelightbox/dist/simple-lightbox.min.css";
 
