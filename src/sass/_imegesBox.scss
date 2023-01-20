@@ -47,19 +47,23 @@ input {
 
 .ripple {
   position: absolute;
-  left: 45%;
-  bottom: 35%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  left: 25px;
+  bottom: 12px;
+  width: 50px;
+  height: 20px;
+  border-radius: 8px;
+  // border-radius: 50%;
   background-color: rgb(255, 255, 255, 0.3);
   border: 1px solid rgb(255, 255, 255, 0.3);
-  animation:button-circle 1.5s ease forwards;
+  animation:button-circle 2.5s ease forwards;
 }
 
 @keyframes button-circle {
   0% {
     transform: scale(0);
+  }  
+  50% {
+    transform: scale(10);
   }
   100% {
     transform: scale(20);

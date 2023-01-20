@@ -5,6 +5,7 @@ import { renderMarkup, clear } from "./js/renderMarkup";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SimpleLightbox from 'simplelightbox';
 import "simplelightbox/dist/simple-lightbox.min.css";
+import { clickOnButton } from "./js/clickOnButton";
 
 const refs = getRefs();
 const imageApiService = new ImageApiService();
@@ -84,3 +85,5 @@ function scroll() {
     behavior: "smooth",
   });
 }
+
+clickOnButton();
