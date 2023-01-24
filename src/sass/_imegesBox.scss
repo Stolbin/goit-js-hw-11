@@ -77,14 +77,9 @@ input {
   }
   & img {
     border-radius: 5px;
-    box-shadow: 0 1px 4px #777;
+    box-shadow: 2px 2px 5px #777;
     object-fit: cover;
-    transition: scale 650ms cubic-bezier(0.2, 0, 0.2, 1), box-shadow 650ms;
-    &:hover{
-      scale: 1.015;
-      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-      transition: scale 650ms cubic-bezier(0.2, 0, 0.2, 1), box-shadow 250ms;
-    }
+
   }
 }
 .load-more {
@@ -113,6 +108,7 @@ input {
 }
 .info {
   padding: 15px 0px 5px 5px;
+  scale: none;
   &__item {
     margin-bottom: 15px;
   }
