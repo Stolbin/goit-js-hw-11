@@ -2,8 +2,8 @@ import ImageApiService from "./js/imageApiService";
 import LoadMoreButton from "./js/loadMoreBtn";
 import { getRefs } from "./js/refs";
 import { renderMarkup, clear } from "./js/renderMarkup";
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import SimpleLightbox from 'simplelightbox';
+import { Notify } from "notiflix/build/notiflix-notify-aio";
+import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 import { clickOnButton } from "./js/clickOnButton";
 
@@ -60,7 +60,7 @@ async function onLoadMore() {
   try {
     const { hits, totalHits } = await imageApiService.getImages();
 
-    if (hits.length < 40) {
+    if (hits.length < this.per_page) {
       Notify.info("We're sorry, but you've reached the end of search results.");
       renderMarkup(hits);
       loadMoreButton.hide();
