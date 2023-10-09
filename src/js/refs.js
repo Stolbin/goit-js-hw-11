@@ -1,4 +1,4 @@
-import LoadMoreBtn from "./loadMoreBtn";
+import LoadMoreButton from "./loadMoreBtn";
 export function getRefs() {
   return {
     searchForm: document.querySelector(".search-form"),
